@@ -9,7 +9,7 @@ import org.junit.Test;
 public class AppTest {
 @Test
 public void testValidLogin()throws InterruptedException {
-    System.setProperty("webdriver.chrome.driver","D:/StaragileDevOps/Assignments/Assignment-5 Selenium/Facebooklogin/selenium-EComAss/Selenium_junit_testing/src/chromedriver.exe");
+    System.setProperty("webdriver.chrome.driver","D:/StaragileDevOps/Assignments/Assignment-5 Selenium/EComm/src/chromedriver.exe");
     WebDriver driver = new ChromeDriver();
     driver.get("https://www.saucedemo.com/");
     driver.findElement(By.id("user-name")).sendKeys("standard_user");
@@ -24,7 +24,7 @@ public void testValidLogin()throws InterruptedException {
 }
 @Test
 public void testInvalidLogin()throws InterruptedException {
-    System.setProperty("webdriver.chrome.driver", "D:/StaragileDevOps/Assignments/Assignment-5 Selenium/Facebooklogin/selenium-EComAss/Selenium_junit_testing/src/chromedriver.exe");
+    System.setProperty("webdriver.chrome.driver", "D:/StaragileDevOps/Assignments/Assignment-5 Selenium/EComm/src/chromedriver.exe");
     WebDriver driver = new ChromeDriver();
     driver.get("https://www.saucedemo.com/");
     driver.findElement(By.id("user-name")).sendKeys("invalid_user");
